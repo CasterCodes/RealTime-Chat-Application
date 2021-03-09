@@ -1,0 +1,17 @@
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    unique_id INT(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    image VARCHAR(400) NOT NULL,
+    status VARCHAR(255) NOT NULL
+)
+
+CREATE TABLE messages (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    outgoing_Id VARCHAR(255) NOT NULL,
+    incoming_id VARCHAR(255) NOT NULL,
+    message VARCHAR(4000) NOT NULL,
+)
